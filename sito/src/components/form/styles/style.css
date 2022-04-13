@@ -1,23 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&family=Rubik+Wet+Paint&display=swap');
 .app {
-   
     font-family: 'Mulish';
-    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     height: 100vh;
-    background-color: url(./img/img1.jpg);
-  }
+    background-color: url(./img/img2.webp);
+    border-width: 0 0 2px;
+    outline: 0;
+    
+    background: transparent;
+}
+div.ui.basic.label{
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-width: 0 0 2px;
+   outline: 0;
+    
+    background: transparent;
+}
+.box{
+  display:flex;
   
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #353030;
+  opacity: 50%;
+  font-size: 20px;
+  
+}
   input[type="text"],
   input[type="password"] {
-    height: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 31px;
+    background: transparent;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
   }
+
   
+  input[type="text"],
+  input[type="password"]:focus {
+    border: 2px solid rgba(94, 255, 0, 0.2);
+    outline: none;
+    border-width: 0 0 2px;
+  }
+
   input[type="submit"] {
     margin-top: 10px;
     cursor: pointer;
@@ -39,6 +68,9 @@
   
   .login-form {
     background-color: white;
+    background: linear-gradient(180deg, rgba(212, 228, 241, 0.89) 0%, rgba(212, 228, 241, 0.65) 98.97%);
+    border-radius: 20px;
+    height: 300px;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
