@@ -1,5 +1,5 @@
 
-import background from "./components/form/styles/img/img1.jpg";
+import background from "./components/form/styles/img/img.jpg";
 import Form from './components/form/index.js'
 import './App.css';
 

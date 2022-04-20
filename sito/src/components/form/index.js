@@ -13,9 +13,9 @@ function Form(){
   const database = [
     {
       username: "dani",
-      password: "scimmia"
+      password: "1"
     },
-    {
+    { 
       username: "user2",
       password: "pass2"
     }
@@ -78,7 +78,14 @@ function Form(){
             {renderErrorMessage("pass")}
           </div>
           <div className="button-container">
-            <input type="submit" />
+            <input type="submit" value="Login" />
+          </div>
+          <div>
+            <br></br>
+            <p><span>OR</span></p>
+          <div className="button-container-r">
+            <input type="submit" value="Register" id="register" />
+          </div>
           </div>
         </form>
       </div>
@@ -89,9 +96,12 @@ function Form(){
     
     <div className="app">
         <div className="login-form">
-          <div className="title">Sign In</div>
-          {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
-          
+          <div className="title">Login</div>
+          {isSubmitted ? 
+          <div>brafo</div>
+          : renderForm}
+
+        
         </div>
         
     </div>

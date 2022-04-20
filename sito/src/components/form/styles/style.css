@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 20px;
     height: 100vh;
-    background-color: url(./img/img2.webp);
+    background-color: url(./img/img.jpg);
     border-width: 0 0 2px;
     outline: 0;
     
@@ -22,13 +22,12 @@ div.ui.basic.label{
 }
 .box{
   display:flex;
-  
+  padding-top: 10px;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #353030;
   opacity: 50%;
   font-size: 20px;
-  
 }
   input[type="text"],
   input[type="password"] {
@@ -42,7 +41,7 @@ div.ui.basic.label{
   
   input[type="text"],
   input[type="password"]:focus {
-    border: 2px solid rgba(94, 255, 0, 0.2);
+    background: transparent;
     outline: none;
     border-width: 0 0 2px;
   }
@@ -51,14 +50,15 @@ div.ui.basic.label{
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
-    background: #ca2929;
-    border: 1px solid #c70c35;
+    background: #111111;
+    border: 1px solid #111111;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 95px;
+    border-radius: 20px;
   }
   
   input[type="submit"]:hover {
-    background: #e03b3b;
+    background: #302f2f;
   }
   
   .button-container {
@@ -85,14 +85,34 @@ div.ui.basic.label{
   }
   
   .title {
+    padding:10px;
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 20px;
   }
-  
+  #register{
+    background-color: red;
+    border: none;
+  }
+  #register:hover{
+    background-color: rgb(238, 81, 81);
+    border: none;
+  }
   .input-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin: 10px;
+  }
+  p{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    color:white;
+  }
+  p span{
+    background:rgb(80, 80, 80);
+    border-radius: 10px;
+    padding: 0 10px
   }
